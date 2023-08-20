@@ -1,0 +1,235 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+:root {
+  --background-color: rgb(214, 46, 51);
+  --background-color-op: rgba(214, 46, 51, 0.6);
+}
+
+/* home */
+.home {
+  background-image: url(../img/events-heavenly-header.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: #fff;
+}
+.home .bg-layout {
+  background-color: var(--background-color-op);
+}
+.home .home__content h1 {
+  font-size: 6rem;
+  margin-bottom: 0.8rem;
+}
+
+/* navbar */
+header {
+  right: unset !important;
+}
+header .navigation {
+  background-color: black;
+  width: 30rem;
+  padding: 4rem 3rem;
+}
+header .nav__link {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 400;
+  /*color: rgba(214, 46, 51, 0.4);
+  */
+  text-decoration: none;
+  transition: all 0.4s;
+}
+header .navigation .nav__item {
+  padding-bottom: 3rem;
+}
+.btn.open {
+  margin-left: 1.5rem;
+  color: #fff;
+  font-size: 3rem;
+  transition: all 0.4s;
+  /*background-color: var(--background-color);
+  */
+  background-color: transparent;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+.nav__link.close {
+  font-size: 3rem;
+  transition: all 0.4s;
+}
+header .nav__link:hover,
+.nav__link.close:hover {
+  color: var(--background-color);
+}
+.active {
+  color: var(--background-color) !important;
+}
+
+/* accordion */
+.accordion {
+  /* width: 50%; */
+  margin: 10rem auto;
+  text-align: center;
+}
+.accordion .accordion__item h3 {
+  background-color: var(--background-color-op);
+  padding: 1rem;
+  color: #fff;
+  line-height: 33.6px;
+  font-size: 2.8rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.accordion .accordion__item p {
+  background-color: #ccc;
+  color: rgb(33, 37, 41);
+  padding: 1rem;
+  margin-bottom: 0;
+}
+/* counter */
+.counter {
+  width: 100%;
+  /* height: 33rem; */
+  background-image: linear-gradient(
+      to bottom,
+      var(--background-color-op),
+      var(--background-color-op)
+    ),
+    url(../img/invitation-2508607__340.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 10rem 0;
+}
+.counter__item {
+  padding: 5rem;
+  border: 1px solid #fff;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+.counter__item p {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #fff;
+}
+/* contact */
+.contact {
+  margin-top: 10rem;
+  padding: 10rem 0rem;
+}
+.contact__heading h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(68, 68, 68);
+  margin-bottom: 2rem;
+}
+.contact__heading p {
+  color: rgb(119, 119, 119);
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+.contact__info h3 {
+  margin-bottom: 0.8rem;
+  font-size: 18px;
+  font-weight: 900;
+  color: rgb(68, 68, 68);
+}
+.contact__info h3 + p {
+  color: rgb(119, 119, 119);
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 5rem;
+}
+.contact__info ul li {
+  margin-bottom: 3.5rem;
+  font-size: 16px;
+  line-height: 26px;
+  color: #777;
+  cursor: pointer;
+}
+.contact__info ul li i {
+  margin-right: 2rem;
+  color: #777;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+.contact__info ul li:hover i {
+  color: #fff;
+}
+.contact__info ul li.red {
+  color: rgb(214, 46, 51);
+}
+.soical-icon {
+  margin-top: 5rem;
+}
+.soical-icon ul li {
+  margin-right: 1rem;
+  margin-bottom: 0;
+  border: 1px solid #999;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+  /*text-align: center;
+  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+  transition: all 0.4s;
+}
+.soical-icon ul li:hover {
+  color: #fff;
+  background-color: var(--background-color);
+  border-color: var(--background-color);
+}
+
+.soical-icon ul li i {
+  display: block;
+  margin: 0;
+  font-size: 1.6rem;
+}
+/* form */
+.form input,
+.form textarea {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  padding: 0.6rem 1.2rem;
+}
+.form textarea {
+  resize: vertical;
+}
+.text-number {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+#letterNum {
+  color: var(--background-color);
+  font-size: 2rem;
+}
+
+/* btn */
+.main-btn {
+  padding: 1rem 2rem;
+  background-color: var(--background-color);
+  border: 1px solid var(--background-color);
+  font-size: 1.8rem;
+  color: #fff;
+}
